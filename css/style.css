@@ -33,7 +33,13 @@
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
+}
+.products{
+    display: flex;
+}
+.products i{
+    padding: 10px 10px 10px 0;
 }
 #main-menu .nav{
     display: relative;
@@ -42,9 +48,14 @@
     position: absolute;
     display: none;
 }
-#main-menu ul .nav:hover a{
-    color: #fff;
+#main-menu ul .nav:hover .products{
     background-color: #000;
+}
+#main-menu ul .nav .products:hover a{
+    color: #fff;
+}
+#main-menu ul .nav .products:hover i{
+    color: #fff;
 }
 .slider img{
     height: 500px !important;

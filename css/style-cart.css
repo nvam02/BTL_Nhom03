@@ -1,0 +1,17 @@
+.right-head a{
+    text-decoration: none;
+    color: black;
+}
+.right-head a:hover{
+    color: red;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; 
+}
+input{
+    width: 30px;
+}
+button{
+    padding: 0;
+}
