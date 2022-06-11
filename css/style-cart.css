@@ -9,9 +9,70 @@ p{
     font-family: 'Poppins', sans-serif;
     font-weight: bold; 
 }
-input{
-    width: 30px;
+.products{
+    display: flex;
+    padding: 10px 0;
 }
-button{
+.products .infor-products{
+    padding-left: 15px;
+    width: 255px;
+}
+.products .delete{
+    width: 400px;
+    align-self: flex-end;
+    text-transform: uppercase;
+    text-align: right;
+}
+.products .delete a{
+    color: red;
+}
+.products .delete:hover a{
+    text-decoration:none ;
+}
+.products .infor-products a{
+    text-decoration: none;
+    color:#000;
+}
+.input-group button{
+    border:1px solid #ddd;
+    background-color: #fff;
+    width: 20px;
+    height: 30px;
     padding: 0;
+}
+.input-group input{
+    border:1px solid #ddd;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+}
+.price #text1{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.price span{
+    font-style:italic;
+    margin-bottom: 15px;
+}
+.price #text2{
+    font-style:italic;
+    margin: 10px 0 24px 0;
+}
+.price .pay button{
+    color: #fff;
+    width:296px;
+    background-color:#E95114;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.price .pay{
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.price .pay button:hover{
+    background-color: #000;
+    transform: scale(0.9);
 }
