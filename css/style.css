@@ -21,6 +21,9 @@
     line-height: 60px;
     color: #000;
 }
+.bothead i{
+    width: 86px;
+}
 #main-menu ul {
     list-style: none;
 }
