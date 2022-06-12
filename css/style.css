@@ -13,6 +13,13 @@
     text-transform: uppercase;
     font-size: 14px;
 }
+.bothead{
+    display: flex;
+    justify-content: space-between;
+} 
+.bothead .middle-img{
+    margin-left:100px;
+}
 .bothead img{
     width: 144px;
     height: 60px;
@@ -21,9 +28,14 @@
     line-height: 60px;
     color: #000;
 }
-.bothead i{
-    width: 86px;
+.bothead #icon-bars-mobile{
+    line-height: 60px;
+    display: none;
 }
+.bothead #cart-link:hover{
+    color:red;
+}
+
 #main-menu ul {
     list-style: none;
 }
