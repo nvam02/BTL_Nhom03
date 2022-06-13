@@ -1,0 +1,52 @@
+.input-group button{
+    border:1px solid #ddd;
+    background-color: #fff;
+    width: 20px;
+    height: 30px;
+    padding: 0;
+}
+.input-group input{
+    border:1px solid #ddd;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+}
+.hidden-cart{
+    background-color:#ecf0f1;
+    width: 340px;
+    height: auto;
+}
+.cart-img{
+    
+}
+.input-group{
+    margin-top: 10px;
+}
+.cart-infor p a{
+    text-decoration: none;
+    color: #000;
+}
+.price{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.pay{
+    text-align: center;
+}
+.bt-pay{
+  text-align: center;
+  padding: 10px;
+}
+.bt-pay button{
+    height: 30px;
+    border: none;
+    color: #fff;;
+    font-weight: bold;
+    background-color:#e74c3c ;
+}
+.bt-pay button:hover{
+    background-color: #000;
+    transform: scale(0.9);
+}
