@@ -70,9 +70,14 @@ input#check1{
 }
 input[type="text"] {
     padding: 5px;
-    width: 70%;
+    width: 60%;
 }
- 
+
+input[type="password"] {
+    padding: 5px;
+    width: 60%;
+}
+
 input#submit {
     padding: 8px;
     width: 50%;

@@ -4,22 +4,20 @@
     <meta charset="utf-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="/js/login.js"></script>
 </head>
 <body>
 	<div class="dn">
             <div class="form">
                 <h2>Đăng nhập</h2>
                 <label style="margin-left: -110px;">Tên đăng nhập</label>
-                <input type="text" name="hoten">
+                <input type="text" name="username" id="username">
                 <label style="margin-right: 22px;">Mật khẩu</label>
-                <input type="text" name="mk">
-                <input id="submit" type="submit" name="submit" value="Đăng nhập ngay"> 
+                <input type="password" name="password" id="password">
+                <input id="submit" type="button" value="Đăng nhập ngay" onclick="validate()"> 
                 <a href=""><h6>Chưa có tài khoản?</h6></a>
-  			</div>    
+  			</div>
 	</div> 
 </div>
 </body>
-<!-- <script>
-    
-</script> -->
 </html>
