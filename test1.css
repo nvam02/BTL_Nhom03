@@ -1,52 +1,66 @@
-.input-group button{
-    border:1px solid #ddd;
-    background-color: #fff;
-    width: 20px;
-    height: 30px;
-    padding: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-.input-group input{
-    border:1px solid #ddd;
+body{
+   background-color:blue ;
+} 
+.header{
+    height: 46px;
+    background-color: black;
     text-align: center;
-    width: 40px;
-    height: 30px;
-    padding: 0;
 }
-.hidden-cart{
-    background-color:#ecf0f1;
-    width: 340px;
-    height: auto;
+.nav,.sub-nav,.subb-nav{
+    list-style-type: none;
 }
-.cart-img{
-    
+.nav > li >a{
+    color: #fff;
+    text-transform: uppercase;
 }
-.input-group{
-    margin-top: 10px;
+.nav > li{
+    display: inline-block;
 }
-.cart-infor p a{
+.nav li{
+    position: relative;
+}
+.nav li a{
     text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+.nav > li:hover > a,
+.nav .sub-nav li:hover
+{
     color: #000;
+    background-color: #ccc;
 }
-.price{
-    font-weight: bold;
-    font-size: 20px;
-    margin-left: 5px;
+.nav .sub-nav {
+    top:100%;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 170px;
 }
-.pay{
-    text-align: center;
+.nav .sub-nav a{
+    color:#000;
+    padding: 0 12px;
 }
-.bt-pay{
-  text-align: center;
-  padding: 10px;
+.nav .sub-nav li{
+    border: 1px solid #ccc;
 }
-.bt-pay button{
-    height: 30px;
-    border: none;
-    color: #fff;;
-    font-weight: bold;
-    background-color:#e74c3c ;
+.nav li:hover .sub-nav
+{
+    display: block;
 }
-.bt-pay button:hover{
-    background-color: #000;
-    transform: scale(0.9);
+.nav1{
+    position: relative;
+}
+.subb-nav{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    right:-243px;
+    top:47px;
 }

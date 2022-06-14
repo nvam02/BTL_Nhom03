@@ -85,8 +85,62 @@
     background-color: #aaa;
 } */
 .header{
-    background-color: #000;
     height: 46px;
+    background-color: black;
+    text-align: center;
+}
+.nav,.sub-nav,.subb-nav{
+    list-style-type: none;
+}
+.nav > li >a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav > li{
+    display: inline-block;
+}
+.nav li{
+    position: relative;
+}
+.nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+.nav > li:hover > a,
+.nav .sub-nav li:hover
+{
+    color: #000;
+    background-color: #ccc;
+}
+.nav .sub-nav {
+    top:100%;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 170px;
+}
+.nav .sub-nav a{
+    color:#000;
+    padding: 0 12px;
+}
+.nav .sub-nav li{
+    border: 1px solid #ccc;
+}
+.nav li:hover .sub-nav
+{
+    display: block;
+}
+.nav1{
+    position: relative;
+}
+.subb-nav{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    right:-243px;
+    top:47px;
 }
 
 
