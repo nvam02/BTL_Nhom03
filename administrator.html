@@ -18,49 +18,49 @@
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-brands fa-canadian-maple-leaf"></i></span>
-                <span class="title"><h2>HSH</h2></span>
+                <span class="title"><img src="/BTL_Nhom03/images/logoBrand.jpg" width="100%" height="80px"></span>
                 </a>
             </li>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-solid fa-house"></i></span>
-                <span class="title">Dashboard</span>
+                <span class="title">Thống Kê</span>
                 </a> 
             </li>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-solid fa-user"></i></span>
-                <span class="title">Customers</span>
+                <span class="title">Khách Hàng</span>
                 </a>      
             </li>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-solid fa-message"></i></span>
-                <span class="title">Message</span> 
+                <span class="title">Tin Nhắn</span> 
                 </a>
             </li>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
-                <span class="title">Help</span>
+                <span class="title">Trợ Giúp</span>
                 </a>     
             </li>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                <span class="title">Setting</span>
+                <span class="title">Cài Đặt</span>
                 </a>        
             </li>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-solid fa-key"></i></span>
-                <span class="title">Password</span>
+                <span class="title">Mật Khẩu</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
-                <span class="title">LogOut</span>
+                <span class="title">Đăng Xuất</span>
                 </a>        
             </li>
           </ul>  
@@ -70,13 +70,58 @@
           <div class="topbar">
             <div class="toggle" onclick="toggleMenu();"></div>
             <div class="search">
-              <label>
-                <input type="text" placeholder="Search here">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </label>
+              <form action="">
+                <input type="text" placeholder="Tìm kiếm" name="q">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
             </div>
             <div class="user">
               <img src="/BTL_Nhom03/images/user.jpg">
+            </div>
+          </div>
+          <div class="cardBox">
+            <div class="card">
+              <div>
+                <div class="numbers">250</div>
+                <div class="cardName">Đơn hàng mới</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa-solid fa-box"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">1000</div>
+                <div class="cardName">Khách hàng</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">$ 2000</div>
+                <div class="cardName">Doanh thu</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <div class="recentOrder">
+              <div class="cardHeader">
+                <h2>Đơn hàng mới</h2>
+                <a href="#" class="btn">Hiển thị tất cả</a>
+              </div>
+              <table>
+
+              </table>
+            </div>
+            <div class="recentCustomers">
+              <div class="cardHeader">
+                <h2>Khách hàng</h2>
+              </div>
             </div>
           </div>
         </div>
