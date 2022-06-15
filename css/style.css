@@ -1,8 +1,14 @@
 *{
     font-family: 'Roboto', sans-serif;
 } 
-.container{
-     max-width: 1200px !important;
+@media (max-width:1023px)
+{
+    .hottline{
+        display: none;
+    }
+    .hidden-cart{
+        display: none;
+    }
 }
 .tophead a:hover{
     color: black;
@@ -25,6 +31,9 @@
     line-height: 60px;
     color: #000;
 }
+.cart-icon :hover{
+    color: red;
+}
 #nav-mobile-wrapper{
     line-height: 60px;
     display: none;
@@ -35,7 +44,7 @@
     {
         display: block;
     } 
-    #main-menu{
+    .main-menu{
         display: none;
     }
 }
@@ -47,88 +56,53 @@
     left:0;
     background-color: rgba(0, 0, 0,0.3);
 }
-/* .bothead #cart-link:hover{
-    color:red;
-}
-
-#main-menu ul {
-    list-style: none;
-    
-}
-#main-menu ul li{
-    padding: 0 23px;
-}
-.nav > li > a{
-    color: #fff;
-}
-#main-menu ul li a{
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px;
-} 
-.products{
-    display: flex;
-}
-.products i{
-    padding: 10px 10px 10px 0;
-}
-#main-menu .nav{
-    display: relative;
-}
-#main-menu .subnav{
-    position: absolute;
-    display: none;
-    top:169px;
-    right:296px;
-    background-color: #aaa;
-} */
-.header{
+.main-menu{
     height: 46px;
     background-color: black;
     text-align: center;
 }
-.nav,.sub-nav,.subb-nav{
+.navb,.sub-nav,.subb-nav{
     list-style-type: none;
 }
-.nav > li >a{
+.navb > li >a{
     color: #fff;
     text-transform: uppercase;
 }
-.nav > li{
+.navb > li{
     display: inline-block;
 }
-.nav li{
+.navb li{
     position: relative;
 }
-.nav li a{
+.navb li a{
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
 }
-.nav > li:hover > a,
-.nav .sub-nav li:hover
+.navb > li:hover > a,
+.navb .sub-nav li:hover
 {
     color: #000;
     background-color: #ccc;
 }
-.nav .sub-nav {
-    top:100%;
+.navb .sub-nav {
+    top:46px;
+    left:0;
     display: none;
     position: absolute;
     background-color: #fff;
-    min-width: 170px;
+    min-width: 220px;
+    padding: 0;
 }
-.nav .sub-nav a{
+.navb .sub-nav a{
     color:#000;
     padding: 0 12px;
 }
-.nav .sub-nav li{
+.navb .sub-nav li{
     border: 1px solid #ccc;
 }
-.nav li:hover .sub-nav
+.navb li:hover .sub-nav
 {
     display: block;
 }
@@ -142,7 +116,18 @@
     right:-243px;
     top:47px;
 }
-
+.slider{
+    margin-top:10px;
+    padding-top: 50%;
+    background: url(/Web_Secondhand/images/mua-sam-do-second-hand-hieu-qua-Lovetaupo.jpg)top center/cover no-repeat ;
+} 
+.text-content{
+    color:#fff;
+}
+.text-heading{
+    text-transform: uppercase;
+    text-align: center;
+}
 
 
 
@@ -168,7 +153,7 @@
 #main-menu ul .nav .products:hover i{
     color: #fff;
 }*/
-.slider img{ 
+/* .slider img{ 
     height: 500px !important;
 }
 .carousel-caption{
@@ -179,7 +164,7 @@ h1{
 }
 .carousel-caption p{
     font-size: 25px;
-}
+} */
 .main-img img{
     width: 100%;
     margin-top: 40px;
