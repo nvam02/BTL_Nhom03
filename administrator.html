@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Admin Dashboard</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="/BTL_Nhom03/css/administrator.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid" style="padding: 0;">
         <div class="navigation">
           <ul>
             <li>
                 <a href="#">
                 <span class="icon"><i class="fa-brands fa-canadian-maple-leaf"></i></span>
-                <span class="title"><h2>Hieu Senconhand</h2></span>
+                <span class="title"><h2>HSH</h2></span>
                 </a>
             </li>
             <li>
@@ -65,7 +65,33 @@
             </li>
           </ul>  
         </div>
+
+        <div class="main">
+          <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="search">
+              <label>
+                <input type="text" placeholder="Search here">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </div>
+            <div class="user">
+              <img src="/BTL_Nhom03/images/user.jpg">
+            </div>
+          </div>
+        </div>
       </div>
+      <script>
+        function toggleMenu()
+        {
+          let toggle = document.querySelector('.toggle');
+          let navigation = document.querySelector('.navigation');
+          let main = document.querySelector('.main');
+          toggle.classList.toggle('active');
+          navigation.classList.toggle('active');
+          main.classList.toggle('main');
+        }
+      </script>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
