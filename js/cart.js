@@ -3,7 +3,7 @@
 let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
 let div_content = ''
 listPD.map((valua, index)=>{
-    div_content += '<div class="products" style="padding-bottom: 10px;"><div class="image-products"><img style="height: 160px; width: 120px;" src="'+ valua.img +'" alt=""></div><div class="infor-products"><a href="">'+ valua.names +'</a><br><span>M</span><br><span>'+ valua.money +'₫</span><br><div class="input-group"><button>-</button><input type="text" value="1"><button>+</button></div></div><div class="delete"><a href="#" class="cart-delete" onclick="xoa('+index+')" >Xóa sản phẩm</a></div></div>'
+    div_content += '<div class="products" style="padding-bottom: 10px;"><div class="image-products"><img style="height: 160px; width: 120px;" src="'+ valua.img +'" alt=""></div><div class="infor-products"><a href="" class="name">'+ valua.names +'</a><br><span>M</span><br><span class="prices">'+ valua.money +'</span>đ<br><div class="input-group"><button onclick="tru">-</button><input type="text" value="1"><button onclick="tru">+</button></div></div><div class="delete"><a href="" class="cart-delete" onclick="xoa('+index+')" >Xóa sản phẩm</a></div></div>'
     
 })
 var add_div = document.createElement("div")
@@ -14,17 +14,35 @@ cartTable.append(add_div)
 // ------------------------------xóa giỏ hàng-------------------------------
 
 function xoa(index){
-    var cartIteam = document.querySelectorAll("tbody div.products")
-    for(var i=0;i<cartIteam.length;i++){
-        var prdT = document.querySelectorAll(".cart-delete")
-        prdT[i].addEventListener("click",function(event){
-            var cartDelet = event.target
-            var cartIT = cartDelet.parentElement.parentElement
-            cartIT.remove()
-            // let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
-            // listPD.splice(index, 1)
-            // localStorage.getItem("list", JSON.stringify(listPD))
-        })
-    }
+    console.log(index)
+    let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
+    listPD.splice(index, 1)
+    localStorage.setItem("list", JSON.stringify(listPD))
+    cartTT()
 }
-xoa()
+
+
+// ------------------------------tính tổng tiền-------------------------------
+
+function cartTT (){
+    var cartIteam = document.querySelectorAll("tbody div.products")
+    var totalC = 0
+    var totalD = 0
+    // console.log(cartIteam.length)
+    for(var i=0;i<cartIteam.length;i++){
+        // var inputValue = cartIteam[i].querySelector("input").value
+        // console.log(inputValue)
+        var productmoney = cartIteam[i].querySelector(".prices").innerHTML
+        // totalA = inputValue * productmoney
+        totalC = totalC + eval(productmoney)
+        totalD = totalC.toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    }
+    console.log(totalD)
+    var tongtien = document.getElementById("text1")
+    // console.log(tongtien)
+    // var spgio = document.querySelector(".cart-icon span")
+    tongtien.innerHTML = totalD+"đ"
+    // spgio.innerHTML = cartIteam.length
+    // inputchange()
+}
+cartTT()
