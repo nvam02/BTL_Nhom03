@@ -128,7 +128,7 @@
 .hidden-items-1  .subb-nav-1{
     display: none;
     position: absolute;
-    background-color: aqua;
+    background-color: #fff;
     right:-265px;
     top:47px;
     padding:0;
@@ -136,7 +136,7 @@
 .hidden-items-2  .subb-nav-2{
     display: none;
     position: absolute;
-    background-color: aqua;
+    background-color: #fff;
     right: -244px;
     top: 96px;
     padding:0;
@@ -144,7 +144,7 @@
 .hidden-items-3  .subb-nav-3{
     display: none;
     position: absolute;
-    background-color: aqua;
+    background-color: #fff;
     right: -221px;
     top: 144px;
     padding:0;
@@ -152,7 +152,7 @@
 .hidden-items-4  .subb-nav-4{
     display: none;
     position: absolute;
-    background-color: aqua;
+    background-color: #fff;
     right: -141px;
     top: 192px;
     padding:0;
@@ -240,166 +240,140 @@
     font-weight: bold;
     font-family: 'Nuosu SIL', serif;
 }
-.top-footer{
+.infor{
     display: flex;
     background-color:#F8F8F8 ;
+    padding:20px 0;
 }
-.top-footer-left{
+.infor-left{
     padding:0 15px;
     flex:1;
 }
-.top-footer-right{
+.infor-right{
     padding:0 15px;
     flex:1;
 }
-.top-footer h3{
+.infor h3{
     font-weight: 700;
     text-transform: uppercase;
     margin:20px 0 24px;
     text-align: center;
 }
-.top-footer p{
+.infor p{
     font-size:14px;
     text-align: center;
     margin: 0 100px;
 }
-.top-footer ul {
+.infor ul {
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0; 
 }
-.top-footer ul li{
+.infor ul li{
     list-style: none;
     margin: 0 20px;
 }
-.top-footer ul li a{
+.infor ul li a{
     width: 48px;
     height: 48px;
     background-color: black;
     padding: 10px 10px;
     border-radius: 50%;
 }
-.top-footer ul li a i{
+.infor ul li a i{
     color: #fff;
     width: 18px;
     height: 16px;
     text-align: center;
 } 
-.top-footer ul :hover a{
+.infor ul :hover a{
     background-color:#fff;
 }  
-.top-footer ul :hover i{
+.infor ul :hover i{
     color:#000;
 }
 @media (min-width:740px) and (max-width:1023px)
 {
-    .top-footer p{
+    .infor p{
         margin: 0 0 10px 0;
+    }
+    .infor h3{
+        font-size:20px !important;
     }
 }
 @media (max-width:739px)
 {
-    .top-footer p{
+    .infor p{
         margin: 0 0 10px 0;
         font-size: 12px;
     }
-    .top-footer{
+    .infor{
         flex-direction: column;
     }
-    .top-footer h3{
+    .infor h3{
        font-size: 15px !important;
     }
-     .top-footer-right{
+     .infor-right{
         padding-bottom: 20px;
     }
-    .top-footer-right{
-        font-size: 12px;
+    .infor-right{
+        font-size: 12px;   
     }
 }
-/* .top-footer {
-    background-color: #f8f8f8;
-    height: auto;
-    padding-bottom: 50px;
-}
-.top-footer .row {
-    background-color: #f8f8f8;
-}
-.top-footer h3{
-    text-transform: uppercase;
-    text-align: center;
-    margin-top:40px;
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-.top-footer p{
-    text-align: center;
-    margin: 10px 100px 0 100px;
-    font-size: 14px;
-}
-.top-footer ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0; 
-}
-.top-footer ul li{
-    list-style: none;
-    margin: 0 20px;
-}
-.top-footer ul li a{
-    width: 48px;
-    height: 48px;
-    background-color: black;
-    padding: 10px 10px;
-    border-radius: 50%;
-}
-.top-footer ul li a i{
-    color: #fff;
-    width: 18px;
-    height: 16px;
-    text-align: center;
-} 
-.top-footer ul :hover a{
-    background-color:#fff;
-}  
-.top-footer ul :hover i{
-    color:#000;
-}
-.bot-footer{
-     background-color: #000;
-     height: auto;
-}
-.bot-footer .row{
+.footer-1{
     background-color: #000;
+    padding: 20px 0;
 }
-.bot-footer h6{
-    margin-top: 50px;
-    color: #fff;
-    
+.footer-1 ul{
+    list-style-type: none;
+    padding:0;
 }
-.bot-footer a{
-    color: #fff;
+.footer-1 a{
     text-decoration: none;
-    font-size: 13px;
-    font-weight:200; 
-} 
-.bot-footer .infor{
-    margin-left:50px;
-    margin-bottom:40px;
+    color:#CBCBCB;
+    font-size: 11px;
 }
-.end-page p{
+.footer-1 .heading-footer{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.footer-1 i{
+    color: #fff;
+    padding-right:5px;
+    font-size: 11px;
+}
+.footer-1 a:hover{
+    color:#fff ;
+}
+@media (max-width:739px)
+{
+    .footer-mobile-1{
+        height: 80px;
+    }
+    .footer-mobile-2{
+       padding:10px 0;
+    }
+
+}
+.footer-2 p{
     text-align: center;
     margin-top:20px;
     font-weight: 300;
 }
-.end-page ul{
+.footer-2 ul{
     display:flex;
     justify-content: center;
     margin-top: 20px;
 }
-.end-page ul li{
+.footer-2 ul li{
     list-style: none;
     margin-right: 10px;
-} */
+} 
+@media (max-width:739px)
+{
+    .footer-2 p{
+        font-size:13px;
+    }
+}
