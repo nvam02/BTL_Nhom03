@@ -11,7 +11,8 @@ const add = document.querySelectorAll("button")
             listPD.push({
                 img: productImg,
                 names: productname,
-                money: productmoney 
+                money: productmoney,
+                SL: 1
             })
         localStorage.setItem("list",JSON.stringify(listPD))
     }})
