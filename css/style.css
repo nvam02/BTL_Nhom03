@@ -10,6 +10,10 @@
         display: none;
     }
 }
+.hottline{
+    color: #aaa;
+    text-transform:uppercase;
+}
 .tophead a:hover{
     color: black;
 }
@@ -30,6 +34,15 @@
 .bothead a{
     line-height: 60px;
     color: #000;
+}
+.middle-img img{
+    margin-left:110px;
+}
+@media (max-width:1023px)
+{
+    .middle-img img{
+        margin: 0;
+    }
 }
 .cart-icon :hover{
     color: red;
@@ -106,27 +119,24 @@
 {
     display: block;
 }
-.nav1{
+.hidden-items li{
     position: relative;
 }
-.subb-nav{
+.hidden-items  .subb-nav{
     display: none;
     position: absolute;
     background-color: aqua;
-    right:-243px;
+    right:-265px;
     top:47px;
+    padding:0;
 }
-.slider{
-    margin-top:10px;
-    padding-top: 50%;
-    background: url(/Web_Secondhand/images/mua-sam-do-second-hand-hieu-qua-Lovetaupo.jpg)top center/cover no-repeat ;
-} 
-.text-content{
-    color:#fff;
+.hidden-items:hover .subb-nav{
+    display: block;
 }
-.text-heading{
-    text-transform: uppercase;
-    text-align: center;
+.slider  img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -144,27 +154,6 @@
 
 
 
-/* #main-menu ul .nav:hover .products{
-    background-color: #000;
-}
-#main-menu ul .nav .products:hover a{
-    color: #fff;
-}
-#main-menu ul .nav .products:hover i{
-    color: #fff;
-}*/
-/* .slider img{ 
-    height: 500px !important;
-}
-.carousel-caption{
-    margin-bottom: 100px;
-}
-h1{
-    text-transform: uppercase;
-}
-.carousel-caption p{
-    font-size: 25px;
-} */
 .main-img img{
     width: 100%;
     margin-top: 40px;
