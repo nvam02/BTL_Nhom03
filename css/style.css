@@ -179,67 +179,49 @@
     right:5px;
     top:15px
 }
+.slider{
+    margin-bottom: 50px;
+}
 .slider  img{
     width: 100%;
     height: auto;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-img img{
-    width: 100%;
-    margin-top: 40px;
+.contact .contact-address{
+    margin-bottom: 30px;
 }
-.main-img h2{
-    margin-top:70px;
+.contact .contact-infor h2{
     text-transform: uppercase;
+    margin: 20px 0 10px !important;
 }
-.main-img p{
-    font-size: 24px;
-    font-family:'eurostilenextproultralt';
-}
-.main-img address{
-    font-size: 20px;
-    font-family:'eurostilenextproultralt' ;
-}
-.main-img address a{
+.contact .contact-address a{
     text-decoration: none;
-    color: black;
+    color: #000;
 }
-.main-img button{
-    margin-right: 20px;
-}
-.main-img button a{
+.contact .contact-more button{
     text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;  
+    margin-right: 10px;
+    padding:10px 18px;
+    border-radius: 0;
 }
-.sub-img img{
-    margin-top:40px ;
+.contact .contact-more button:hover{
+    background-color: #fff;
+    color: #000;
 }
-.about-home{
-    margin-top: 30px;
-}
-.about-home p{
-    font-size:24px;
-    font-family:'helveticaneue-ultralight';
-    font-weight: bold;
-    font-family: 'Nuosu SIL', serif;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .infor{
     display: flex;
     background-color:#F8F8F8 ;
@@ -376,4 +358,18 @@
     .footer-2 p{
         font-size:13px;
     }
+}
+#backtop{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    position: fixed;
+    right:20px;
+    bottom:15px;
+    cursor: pointer;
 }
