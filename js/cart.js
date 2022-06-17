@@ -3,7 +3,7 @@
 let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
 let div_content = ''
 listPD.map((valua, index)=>{
-    div_content += '<div class="products" style="padding-bottom: 10px;"><div class="image-products"><img style="height: 160px; width: 120px;" src="'+ valua.img +'" alt=""></div><div class="infor-products"><a href="" class="name">'+ valua.names +'</a><br><span>M</span><br><span class="prices">'+ valua.money +'</span>đ<br><div class="input-group"><button type="button" id="down" onclick="step(this,'+index+')">-</button><input type="text" min="1" max="50" step="1" value="'+valua.SL+'" class="input" readonly><button type="button" id="up" onclick="step(this,'+index+')">+</button></div></div><div class="delete"><a href="" class="cart-delete" onclick="xoa('+index+')" >Xóa sản phẩm</a></div></div>'
+    div_content += '<div class="products" style="padding-bottom: 10px;"><div class="image-products"><img style="height: 160px; width: 120px;" src="'+ valua.img +'" alt=""></div><div class="infor-products"><a href="" class="name">'+ valua.names +'</a><br><span>M</span><br><span class="prices">'+ valua.money +'</span>đ<br><div class="input-group"><button type="button" id="down" onclick="step(this,'+index+')">-</button><input type="text" min="1" max="50" step="1" value="'+valua.SL+'" class="input" id="'+index+'" readonly><button type="button" id="up" onclick="step(this,'+index+')">+</button></div></div><div class="delete"><a href="" class="cart-delete" onclick="xoa('+index+')" >Xóa sản phẩm</a></div></div>'
     
 })
 var add_div = document.createElement("div")
@@ -46,24 +46,33 @@ function cartTT (){
     // inputchange()
 }
 cartTT()
+
+// ------------------------------tăng giảm số lượng update lại giá -------------------------------
+
 function step(btn,index){
-    let id = btn.getAttribute("id")
     const inputs=document.querySelectorAll("tbody div.input-group .input")
     for(var i=0;i<inputs.length;i++){
-        let min = inputs[i].getAttribute("min")
-        let max = inputs[i].getAttribute("max")
-        let step = inputs[i].getAttribute("step")
-        let val = inputs[i].getAttribute("value")
-        let stepper = (id == "up") ? (step * 1) : (step * -1)
-        let newvalua = parseInt(val)+stepper
-        if(newvalua >= min && newvalua <= max){
-            inputs[i].setAttribute("value",newvalua)
-            let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
-            listPD.map((valua,index)=>{
-                valua.SL=newvalua
-            })
-            localStorage.setItem("list", JSON.stringify(listPD))
+        let id = btn.getAttribute("id")
+        let ind = inputs[i].getAttribute("id")
+        if(index==ind){
+            let min = inputs[i].getAttribute("min")
+            let max = inputs[i].getAttribute("max")
+            let step = inputs[i].getAttribute("step")
+            let val = inputs[i].getAttribute("value")
+            let stepper = (id == "up") ? (step * 1) : (step * -1)
+            let newvalua = parseInt(val)+stepper
+            if(newvalua >= min && newvalua <= max){
+                inputs[i].setAttribute("value",newvalua)
+                let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
+                listPD.map((valua,index)=>{
+                    if(index==ind){
+                        valua.SL=newvalua
+                    }
+                })
+                localStorage.setItem("list", JSON.stringify(listPD))
+            }
         }
+        
         }
     cartTT()
 }
