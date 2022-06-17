@@ -13,11 +13,12 @@
   </head>
   <body>
     <div class="container-fluid" style="padding: 0;">
+      
         <div class="navigation">
           <ul>
             <li>
                 <a href="#">
-                <span class="icon"><i class="fa-brands fa-canadian-maple-leaf"></i></span>
+                <span class="icon"><i id ="leaf" class="fa-brands fa-canadian-maple-leaf"></i></span>
                 <span class="title"><img src="/BTL_Nhom03/images/logoBrand.jpg" width="100%" height="80px"></span>
                 </a>
             </li>
@@ -67,18 +68,20 @@
         </div>
 
         <div class="main">
+
           <div class="topbar">
             <div class="toggle" onclick="toggleMenu();"></div>
             <div class="search">
               <form action="">
                 <input type="text" placeholder="Tìm kiếm" name="q">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="find" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </div>
             <div class="user">
               <img src="/BTL_Nhom03/images/user.jpg">
             </div>
           </div>
+
           <div class="cardBox">
             <div class="card">
               <div>
@@ -239,7 +242,7 @@
           let main = document.querySelector('.main');
           toggle.classList.toggle('active');
           navigation.classList.toggle('active');
-          main.classList.toggle('main');
+          main.classList.toggle('mainactive');
         }
       </script>
       
