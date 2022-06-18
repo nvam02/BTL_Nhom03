@@ -12,77 +12,151 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <hr>
-        <div class="d-flex justify-content-between">
-            <h1 style="font-family: 'Kdam Thmor Pro', sans-serif;">Giỏ hàng</h1>
-            <div class="right-head">
-                <a href="">
-                    Tiếp tục mua hàng
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+    <div id="main">
+        <div id="header">
+            <div class="container">
+                <div class="tophead">
+                    <div class="d-flex justify-content-end">
+                        <div class="bg-none mt-2 hottline">Hottline: <a href="tel0345155086" class="items"style="padding-right:10px">0345155086</a></div>
+                        <div class="bg-none mt-2"><a href="" class="items">Đăng nhập</a></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="bothead">
+                    <div class="nav-mobile-icon">
+                        <label for="nav-mobile-input" id="nav-mobile-icon-wrapper">
+                            <i id="icon-bars-mobile"class="fa-solid fa-bars"style="font-size:30px;"></i>
+                        </label>
+                    </div>
+                    <div class="middle-img">
+                        <a href=""><img class="col-lg-4 col-lg-offset-4"src="images/logo.webp" alt=""></a>
+                    </div>               
+                    <div class="cart-icon">
+                        <a id="cart-link"href=""><i id="icon-cart"class="fa-solid fa-cart-shopping"><strong class="hidden-cart">Giỏ Hàng</strong></i></a>
+                    </div>
+                </div>   
+                <div id="main-menu">
+                    <ul class="navb">
+                        <li><a href="">Trang chủ</a></li>
+                        <li>
+                            <a href="">Sản phẩm<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="">Hiếm/Rare</a></li>
+                                <div class="hidden-items-1">
+                                    <li><a href="">Áo phông/T-Shirts<i class="fa-solid fa-angle-right"></i></a></li>
+                                    <ul class="subb-nav-1">
+                                        <li><a href="">Sport/ Skate/ Outdoor/ Brand/ ....</a></li>
+                                        <li><a href="">Music/ Celebrities/ Bands</a></li>
+                                        <li><a href="">Movies/ TV Shows/ Cartoons/ ...</a></li>
+                                        <li><a href="">Luxury Brands/ Designers/</a></li>
+                                    </ul>
+                                </div>
+                                <div class="hidden-items-2">
+                                    <li><a href="">Quần/Pants<i class="fa-solid fa-angle-right"></i></a></li>
+                                    <ul class="subb-nav-2">
+                                        <li><a href="">Quần bò/ Jeans</a></li>
+                                        <li><a href="">Quần đùi/ Shorts</a></li>
+                                        <li><a href=""> Quần dài/ Pants & Trousers.....</a></li>
+                                    </ul>
+                                </div>
+                                <div class="hidden-items-3">
+                                        <li><a href="">Túi/Bags<i class="fa-solid fa-angle-right"></i></a></li>
+                                        <ul class="subb-nav-3">
+                                            <li><a href="">Backpacks/ Duffel Bags/ ...</a></li>
+                                            <li><a href=""> Vintage/ Basic/ ...</a></li>
+                                        </ul>
+                                </div>
+                                <div class="hidden-items-4">
+                                    <li><a href="">Mũ/Hats<i class="fa-solid fa-angle-right"></i></a></li>
+                                    <ul class="subb-nav-4">
+                                        <li><a href="">Bucket , Vintage</a></li>
+                                        <li><a href="">Cap , Basic</a></li>
+                                    </ul>
+                                </div>
+                                <li><a href="">Giảm giá/Sale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="middle-cart">
-            <div class="row">
-                <div class="col-md-8">
-                        <p>Thông tin sản phẩm</p>
-                        <hr>
-                        <div class="products">
-                            <div class="image-products">
-                                <img src="images/cart-img.jpg" alt="">
-                            </div>
-                            <div class="infor-products">
-                                <a href="">Vintage 1995 Betty Boop Spring Fever Tee</a><br>
-                                <span>M</span><br>
-                                <span>1.950.000₫</span><br>
-                                <div class="input-group">
-                                    <button>-</button>
-                                    <input type="text" value="1">
-                                    <button>+</button>
-                                </div>
-                            </div>
-                            <div class="delete">
-                                <a href="">Xóa sản phẩm</a>
-                            </div>
-                        </div>  
-                        <div class="products">
-                            <div class="image-products">
-                                <img src="images/cart-img2.jpg" alt="">
-                            </div>
-                            <div class="infor-products">
-                                <a href="">Vintage 90s Magadeth Tee</a><br>
-                                <span>M</span><br>
-                                <span>1.950.000₫</span><br>
-                                <div class="input-group">
-                                    <button>-</button>
-                                    <input type="text" value="1">
-                                    <button>+</button>
-                                </div>
-                            </div>
-                            <div class="delete">
-                                <a href="">Xóa sản phẩm</a>
-                            </div>
-                        </div>  
-                </div>
-                <div class="col-md-4">
-                    <p>Tổng tiền</p>
-                    <hr>
-                    <div class="price">
-                        <p id="text1">6.950.000₫</p>
-                        <span>Không bao gồm thuế và phí vận chuyển</span>
-                        <p id="text2">Đơn đặt hàng sẽ được xử lý bằng VNĐ.</p>
-                        <div class="pay">
-                            <button>Thanh toán</button>
+        <div id="cart">
+            <div class="container">
+                <hr>
+                <div id="top-cart">
+                    <div class="d-flex justify-content-between">
+                        <h1 style="font-family: 'Kdam Thmor Pro', sans-serif;">Giỏ hàng</h1>
+                        <div class="right-head">
+                            <a href="">
+                                Tiếp tục mua hàng
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
                         </div>
-                        
+                    </div>
+                </div>
+                <hr>
+                <div id="middle-cart">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12 col-sm-12">
+                                <p>Thông tin sản phẩm</p>
+                                <hr>
+                                <div class="products">
+                                     <div class="image-products">
+                                        <img src="images/cart-img.jpg" alt="">
+                                    </div>
+                                    <div class="infor-products">
+                                        <a href="">Vintage 1995 Betty Boop Spring Fever Tee</a><br>
+                                        <span>M</span><br>
+                                        <span>1.950.000₫</span><br>
+                                        <div class="input-group">
+                                            <button>-</button>
+                                            <input type="text" value="1">
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="delete">
+                                        <a href="">Xóa sản phẩm</a>
+                                    </div>
+                                </div>  
+                                <div class="products">
+                                    <div class="image-products">
+                                        <img src="images/cart-img2.jpg" alt="">
+                                    </div>
+                                    <div class="infor-products">
+                                        <a href="">Vintage 90s Magadeth Tee</a><br>
+                                        <span>M</span><br>
+                                        <span>1.950.000₫</span><br>
+                                        <div class="input-group">
+                                            <button>-</button>
+                                            <input type="text" value="1">
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                    <div class="delete">
+                                        <a href="">Xóa sản phẩm</a>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <p>Tổng tiền</p>
+                                <hr>
+                                <div class="price">
+                                    <p id="text1">6.950.000₫</p>
+                                    <span>Không bao gồm thuế và phí vận chuyển</span>
+                                    <p id="text2">Đơn đặt hàng sẽ được xử lý bằng VNĐ.</p>
+                                    <div class="pay">
+                                        <button>Thanh toán</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      
     </div>
+    
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

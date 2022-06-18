@@ -12,8 +12,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
 </head>
 <div>
-    <div class="main">
-        <div class="header">
+    <div id="main">
+        <div id="header">
             <div class="container">
                 <div class="tophead">
                     <div class="d-flex justify-content-end">
@@ -35,7 +35,7 @@
                         <a id="cart-link"href=""><i id="icon-cart"class="fa-solid fa-cart-shopping"><strong class="hidden-cart">Giỏ Hàng</strong></i></a>
                     </div>
                 </div>   
-                <div class="main-menu">
+                <div id="main-menu">
                     <ul class="navb">
                         <li><a href="">Trang chủ</a></li>
                         <li>
@@ -62,8 +62,8 @@
                                 <div class="hidden-items-3">
                                         <li><a href="">Túi/Bags<i class="fa-solid fa-angle-right"></i></a></li>
                                         <ul class="subb-nav-3">
-                                        <li><a href="">Backpacks/ Duffel Bags/ ...</a></li>
-                                        <li><a href=""> Vintage/ Basic/ ...</a></li>
+                                            <li><a href="">Backpacks/ Duffel Bags/ ...</a></li>
+                                            <li><a href=""> Vintage/ Basic/ ...</a></li>
                                         </ul>
                                 </div>
                                 <div class="hidden-items-4">
@@ -80,12 +80,12 @@
                 </div>
             </div>
         </div>
-        <div class="slider">
+        <div id="slider">
             <div class="container">
                 <img src="/Web_Secondhand/images/slider-img.webp" alt="">
             </div>
         </div>
-        <div class="contact">
+        <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class=" col-xl-6 col-lg-12 col-md-12 col-sm-12">
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="home-images">
+        <div id="home-images">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -141,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-home">
+        <div id="text-home">
             <div class="container">
                 <p style="font-family: 'helveticaneue-ultralight';">
                     Hi xin chào tất cả các bạn mình là Hiếu, mọi người thường gọi mình là Hiếu2tay. Hai tay của mình dành phần lớn thời gian để tìm tòi,
@@ -151,27 +151,33 @@
                 </p>
             </div>
         </div>
-        <div class="wrapper-infor">
-            <div class="infor">
-                <div class="infor-left">
-                    <h3>Không đổi trả hàng</h3>
-                    <p>
-                        Tất cả sản phẩm của shop đều có tuổi đời trên 10 năm nên không thể tránh được những lỗi nhỏ. Các bạn hãy check kỹ trước khi mua hàng nhé!
-                    </p>
-                </div>
-                <div class="infor-right">
-                    <h3>Mạng xã hội</h3>
-                    <ul>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                    </ul>
+        <div class="social-information">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <div class="infor-left">
+                            <h3>Không đổi trả hàng</h3>
+                            <p>
+                                Tất cả sản phẩm của shop đều có tuổi đời trên 10 năm nên không thể tránh được những lỗi nhỏ. Các bạn hãy check kỹ trước khi mua hàng nhé!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <div class="infor-right">
+                            <h3>Mạng xã hội</h3>
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <footer>
-            <div class="footer-1">
+            <div id="footer-1">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-1 footer-mobile-1">
@@ -211,21 +217,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-2">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>Cung cấp bởi Sapo</p>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li><a href=""><img src="images/visa.png" alt=""></a></li>
-                                <li><a href=""><img src="images/visael.png" alt=""></a></li>
-                                <li><a href=""><img src="images/card-red.png" alt=""></a></li>
-                                <li><a href=""><img src="images/card-blue.png" alt=""></a></li>
-                                <li><a href=""><img src="images/card-allblue.webp" alt=""></a></li>
-                                <li><a href=""><img src="images/card-purple.png" alt=""></a></li>
-                                <li><a href=""><img src="images/paypal.png" alt=""></a></li>
-                            </ul>
+                <div id="footer-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Cung cấp bởi Sapo</p>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href=""><img src="images/visa.png" alt=""></a></li>
+                                    <li><a href=""><img src="images/visael.png" alt=""></a></li>
+                                    <li><a href=""><img src="images/card-red.png" alt=""></a></li>
+                                    <li><a href=""><img src="images/card-blue.png" alt=""></a></li>
+                                    <li><a href=""><img src="images/card-allblue.webp" alt=""></a></li>
+                                    <li><a href=""><img src="images/card-purple.png" alt=""></a></li>
+                                    <li><a href=""><img src="images/paypal.png" alt=""></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>   
@@ -245,18 +253,66 @@
             <ul class="nav-mobile-list">
                 <li><a href=""class="nav-mobile-link">Trang chủ</a></li>
                 <li class="nav-mobile-list-items">
-                    
-                    <div class="nav-mobile-items">
-                        <a href=""class="nav-mobile-link">Sản phẩm</a>
+                    <div class="d-flex justify-content-between">
+                        <div class="nav-mobile-items">
+                            <a href=""class="nav-mobile-link">Sản phẩm</a>
+                        </div>
+                        <div id="icon-down-nav-mobile"><i class="fa-solid fa-angle-down"></i></div>
                     </div>
-                    <div id="togges"><i class="fa-solid fa-angle-down"></i></div>
                     <ul id="sub-nav-mobile">
-                        <li><a href="">Hiếm/Rare</a></li>
-                        <li><a href="">Áo phông/T-Shirts<i class="fa-solid fa-angle-right"></i></a></li>
-                        <li><a href="">Quần/Pants<i class="fa-solid fa-angle-right"></i></a></li>
-                        <li><a href="">Mũ/Hats<i class="fa-solid fa-angle-right"></i></a></li>
-                        <li><a href="">Túi/Bags<i class="fa-solid fa-angle-right"></i></a></li>
-                        <li><a href="">Giảm giá/Sale</a></li>
+                        <li>
+                            <div class="sub-nav-mobile-items">
+                                <a href="">Hiếm/Rare</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <a href="">Áo phông/T-Shirts</a>
+                                <i class="fa-solid fa-angle-down icon-subb-nav-mobile-1"></i>
+                            </div>
+                        </li>
+                        <ul class="subb-nav-mobile-1">
+                            <li><a href="">Sport/ Skate/ Outdoor/ Brand/....</a></li>
+                            <li><a href="">Music/ Celebrities/ Bands</a></li>
+                            <li><a href="">Movies/ TV Shows/ Cartoons/ ...</a></li>
+                            <li><a href="">Luxury Brands/ Designers/</a></li>
+                        </ul>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <a href="">Quần/Pants</a>
+                                <i class="fa-solid fa-angle-down icon-subb-nav-mobile-2"></i>
+                            </div>
+                        </li>
+                        <ul class="subb-nav-mobile-2">
+                            <li><a href="">Quần bò/ Jeans</a></li>
+                            <li><a href="">Quần đùi/ Shorts</a></li>
+                            <li><a href=""> Quần dài/ Pants & Trousers.....</a></li>
+                        </ul>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <a href="">Túi/Bags</a>
+                                <i class="fa-solid fa-angle-down icon-subb-nav-mobile-3"></i>
+                            </div>
+                        </li>
+                        <ul class="subb-nav-mobile-3">
+                            <li><a href="">Backpacks/ Duffel Bags/ ...</a></li>
+                            <li><a href=""> Vintage/ Basic/ ...</a></li>
+                        </ul>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                               <a href="">Mũ/Hats</a>
+                                <i class="fa-solid fa-angle-down icon-subb-nav-mobile-4"></i>
+                            </div>
+                        </li>
+                        <ul class="subb-nav-mobile-4">
+                            <li><a href="">Bucket , Vintage</a></li>
+                            <li><a href="">Cap , Basic</a></li>
+                        </ul>
+                        <li>
+                            <div class="sub-nav-mobile-items">
+                                <a href="">Giảm giá/Sale</a>
+                            </div>
+                        </li>
                      </ul>
                 </li>
             </ul>
@@ -283,9 +339,29 @@
         });
     });
     $(document).ready(function(){
-        $('#togges').click(function(){
+        $('#icon-down-nav-mobile').click(function(){
             $('#sub-nav-mobile').slideToggle();
         });
     });
+    $(document).ready(function(){
+        $('.icon-subb-nav-mobile-1').click(function(){
+            $('.subb-nav-mobile-1').slideToggle();
+        });
+    })
+     $(document).ready(function(){
+        $('.icon-subb-nav-mobile-2').click(function(){
+             $('.subb-nav-mobile-2').slideToggle();
+        });
+    })
+    $(document).ready(function(){
+        $('.icon-subb-nav-mobile-3').click(function(){
+            $('.subb-nav-mobile-3').slideToggle();
+        });
+    })
+    $(document).ready(function(){
+        $('.icon-subb-nav-mobile-4').click(function(){
+            $('.subb-nav-mobile-4').slideToggle();
+        });
+    })
 </script>
 </html>
