@@ -6,31 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style-product-content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <hr>
-       <div class="row">
-            <div class="col-md-6">
-                <div class="big-img">
-                    <img src="images/big-img-product.webp" alt=""style="width:548px;height:717px;">
+    <div class="main">
+        <div id="header">
+            <div class="container">
+                <div class="tophead">
+                    <div class="d-flex justify-content-end">
+                        <div class="bg-none mt-2 hottline">Hottline: <a href="tel0345155086" class="items"style="padding-right:10px">0345155086</a></div>
+                        <div class="bg-none mt-2"><a href="" class="items">Đăng nhập</a></div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="bothead">
+                    <div class="nav-mobile-icon">
+                        <label for="nav-mobile-input" id="nav-mobile-icon-wrapper">
+                            <i id="icon-bars-mobile"class="fa-solid fa-bars"style="font-size:30px;"></i>
+                        </label>
+                    </div>
+                    <div class="middle-img">
+                        <a href=""><img class="col-lg-4 col-lg-offset-4"src="images/logo.webp" alt=""></a>
+                    </div>               
+                    <div class="cart-icon">
+                        <!-- //<a id="cart-link"href=""><i id="icon-cart"class="fa-solid fa-cart-shopping"><span class="hidden-cart">Giỏ Hàng</span></i></a> -->
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i><strong id="hidden-cart">Giỏ hàng</strong></a>
+                    </div>
+                </div>   
+                <div id="main-menu">
+                    <ul class="navb">
+                        <li><a href="">Trang chủ</a></li>
+                        <li>
+                            <a href="">Sản phẩm<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-nav">
+                                <li><a href="">Hiếm/Rare</a></li>
+                                <div class="hidden-items-1">
+                                    <li><a href="">Áo phông/T-Shirts<i class="fa-solid fa-angle-right"></i></a></li>
+                                    <ul class="subb-nav-1">
+                                        <li><a href="">Sport/ Skate/ Outdoor/ Brand/ ....</a></li>
+                                        <li><a href="">Music/ Celebrities/ Bands</a></li>
+                                        <li><a href="">Movies/ TV Shows/ Cartoons/ ...</a></li>
+                                        <li><a href="">Luxury Brands/ Designers/</a></li>
+                                    </ul>
+                                </div>
+                                <div class="hidden-items-2">
+                                    <li><a href="">Quần/Pants<i class="fa-solid fa-angle-right"></i></a></li>
+                                    <ul class="subb-nav-2">
+                                        <li><a href="">Quần bò/ Jeans</a></li>
+                                        <li><a href="">Quần đùi/ Shorts</a></li>
+                                        <li><a href=""> Quần dài/ Pants & Trousers.....</a></li>
+                                    </ul>
+                                </div>
+                                <div class="hidden-items-3">
+                                        <li><a href="">Túi/Bags<i class="fa-solid fa-angle-right"></i></a></li>
+                                        <ul class="subb-nav-3">
+                                            <li><a href="">Backpacks/ Duffel Bags/ ...</a></li>
+                                            <li><a href=""> Vintage/ Basic/ ...</a></li>
+                                        </ul>
+                                </div>
+                                <div class="hidden-items-4">
+                                    <li><a href="">Mũ/Hats<i class="fa-solid fa-angle-right"></i></a></li>
+                                    <ul class="subb-nav-4">
+                                        <li><a href="">Bucket , Vintage</a></li>
+                                        <li><a href="">Cap , Basic</a></li>
+                                    </ul>
+                                </div>
+                                <li><a href="">Giảm giá/Sale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-1">
-                <img src="images/small-img-product_1.webp" alt="">
-                <img src="images/small-img-product_2.webp" alt="">
-                <img src="images/small-img-product_3.webp" alt="">
-                <img src="images/small-img-product_4.webp" alt="">
+        </div>
+        <div id="products-content-head">
+            <div class="container">
+                <div class="products-link-head">
+                    <a href="">Trang chủ</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="">Phông - Luxury,Designer,...</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <strong>Stussy x Rat Patrol Tee</strong>
+                </div>
             </div>
-            <div class="col-md-5">
-                
-            </div>  
-       </div>
-       <hr>
+        </div>
+        <div id="main-products-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="main-products-content-img">
+                            <img src="/Web_Secondhand/images/content-product-img.webp" alt=""id="main-img">
+                        </div>
+                    </div> 
+                    <div class="col-lg-1 col-md-12 col-sm-12">
+                        <div class="main-products-content-sub-img">
+                            <ul id="sub-img-list">
+                                <li><img src="/Web_Secondhand/images/content-product-img.webp" alt=""></li>
+                               <li><img src="/Web_Secondhand/images/sub-products-content-img2.webp"alt=""></li>
+                               <li><img src="/Web_Secondhand/images/sub-products-content-img3.webp"alt=""></li>
+                               <li><img src="/Web_Secondhand/images/sub-products-content-img4.webp"alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="main-products-content-info">
+                            <h1>Stussy x Rat Patrol Tee</h1>
+                            <div class="review">
+                                <span>
+                                    <b>Hãng:</b>
+                                    Stussy
+                                </span>
+                            </div>
+                            <div class="product-description">
+								 Condition: 8-8.5 
+                                 Dài (L): 70 
+                                 Rộng vai (W1): 47 
+                                 Rộng ngực (W2): 49                     
+                            </div>
+                            <div class="price-box">
+                                <span class="price">
+                                    350.000₫
+                                </span>
+                            </div>
+                            <div class="product-size">
+                                <div class="header">
+                                    Kích thước:
+                                </div>
+                                <div class="product-size-box">
+                                    <label for="">
+                                        M
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="amount">
+                                <span>
+                                    Số lượng:
+                                </span>
+                                <input type="number">
+                            </div>
+                            <div class="btn-pay">
+                                <button type="button" class="btn btn-dark">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+  
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    $(()=>{
+        $('#sub-img-list img').click(function(){
+            let imgPatch= $(this).attr('src');
+            $('#main-img').attr('src',imgPatch);
+        })
+    })
+</script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
