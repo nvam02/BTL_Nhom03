@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style-product-content.css">
+    <link rel="stylesheet" href="css/style-home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Oswald:wght@300;700&family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
 </head>
-<body>
+<div>
     <div id="main">
         <div id="header">
             <div class="container">
@@ -31,7 +32,7 @@
                         <a href=""><img class="col-lg-4 col-lg-offset-4"src="images/logo.webp" alt=""></a>
                     </div>               
                     <div class="cart-icon">
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i><strong id="hidden-cart">Giỏ hàng</strong></a>
+                        <a id="cart-link"href=""><i id="icon-cart"class="fa-solid fa-cart-shopping"><strong class="hidden-cart">Giỏ Hàng</strong></i></a>
                     </div>
                 </div>   
                 <div id="main-menu">
@@ -79,206 +80,101 @@
                 </div>
             </div>
         </div>
-        <div id="products-content-head">
+        <div id="slider">
             <div class="container">
-                <div class="products-link-head">
-                    <a href="">Trang chủ</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <a href="">Phông - Luxury,Designer,...</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <strong>Stussy x Rat Patrol Tee</strong>
+                <img src="/Web_Secondhand/images/slider-img.webp" alt="">
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="contact-img">
+                            <img src="images/mainimg.jpg" alt=""style="width:100%">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="contact-infor">
+                            <h2>Hieusecondhand Vintage</h2>
+                            <div class="contact-address">
+                                Selling quality stuff since 2016
+                                <br>
+                                <br>
+                                Address : 
+                                <a href="">6/219 Nguyen Ngoc Vu - Cau Giay - Ha Noi - Viet Nam</a>
+                                <br>
+                                Open : 10H-22H
+                                <br>
+                                Contact us : 0853595819
+                            </div>
+                            <div class="contact-more">
+                                <button type="button" class="btn btn-dark">Facebook</button>
+                                <button type="button" class="btn btn-dark">Instagram</button>
+                                <button type="button" class="btn btn-dark">Youtube</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="main-products-content">
+        <div id="home-images">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="main-products-content-img">
-                            <img src="/Web_Secondhand/images/content-product-img.webp" alt=""id="main-img">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="images-items">
+                            <img src="images/sub-img1.webp" alt="">
                         </div>
-                    </div> 
-                    <div class="col-lg-1 col-md-12 col-sm-12">
-                        <div class="main-products-content-sub-img">
-                            <div class="sub-heading">
-                                <h2>Các hình ảnh liên quan</h2>
+                        <div class="images-items">
+                            <img src="images/sub-img2.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="right-images">
+                            <div class="images-items">
+                                <img src="images/sub-img3.webp" alt="">
                             </div>
-                            <ul id="sub-img-list">
-                                <li><img src="/Web_Secondhand/images/content-product-img.webp" alt=""></li>
-                               <li><img src="/Web_Secondhand/images/sub-products-content-img2.webp"alt=""></li>
-                               <li><img src="/Web_Secondhand/images/sub-products-content-img3.webp"alt=""></li>
-                               <li><img src="/Web_Secondhand/images/sub-products-content-img4.webp"alt=""></li>
+                            <div class="images-items">
+                                <img src="images/sub-img4.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-home">
+            <div class="container">
+                <p style="font-family: 'helveticaneue-ultralight';">
+                    Hi xin chào tất cả các bạn mình là Hiếu, mọi người thường gọi mình là Hiếu2tay. Hai tay của mình dành phần lớn thời gian để tìm tòi,
+                    chọn lọc kỹ lưỡng những sản phẩm độc nhất. 
+                    Tất cả sản phẩm mình muốn đem tới cho các bạn là những văn hóa đến từ nhiều nơi trên thế giới, một ban nhạc, một bộ phim, một sự kiện đã từng làm mưa làm gió hay những thương hiệu đến từ nhiều brand nổi tiếng. 
+                    Không chỉ vậy mình luôn tìm hiểu trau dồi kiến thức từng ngày và mong muốn hoàn thiện và phát triển văn hóa vintage tại Việt Nam.
+                </p>
+            </div>
+        </div>
+        <div class="social-information">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <div class="infor-left">
+                            <h3>Không đổi trả hàng</h3>
+                            <p>
+                                Tất cả sản phẩm của shop đều có tuổi đời trên 10 năm nên không thể tránh được những lỗi nhỏ. Các bạn hãy check kỹ trước khi mua hàng nhé!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <div class="infor-right">
+                            <h3>Mạng xã hội</h3>
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="main-products-content-info">
-                            <h1>Stussy x Rat Patrol Tee</h1>
-                            <div class="review">
-                                <span>
-                                    <b>Hãng:</b>
-                                    Stussy
-                                </span>
-                            </div>
-                            <div class="product-description">
-								 Condition: 8-8.5 
-                                 Dài (L): 70 
-                                 Rộng vai (W1): 47 
-                                 Rộng ngực (W2): 49                     
-                            </div>
-                            <div class="price-box">
-                                <span class="price">
-                                    350.000₫
-                                </span>
-                            </div>
-                            <div class="product-size">
-                                <div class="header">
-                                    Kích thước:
-                                </div>
-                                <div class="product-size-box">
-                                    <label for="">
-                                        M
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="amount">
-                                <span>
-                                    Số lượng:
-                                </span>
-                                <input type="number">
-                            </div>
-                            <div class="btn-pay">
-                                <button type="button" class="btn btn-dark">Thêm vào giỏ hàng</button>
-                            </div>
-                        </div> 
-                    </div>
                 </div>
             </div>
-        </div>
-        <div id="product-tab">
-            <div class="container">
-                <div class="tabs">
-                    <ul class="nav-tabs">
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">
-                                <a href="#describe">Mô tả</a>
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">
-                                <a href="#ship">Bảng giá ship</a>
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn btn-outline-dark">
-                                <a href="#change">chính sách đổi trả</a>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tabs-contents">
-                    <div id="describe" class="tabs-contents-items">
-                        <p>Condition: 8-8.5</p>
-                        <p>Dài (L): 70</p>
-                        <p>Rộng vai (W1): 47</p>
-                        <p>Rộng ngực (W2): 49</p>
-                    </div>
-                    <div id="ship" class="tabs-contents-items">
-                        <img src="/Web_Secondhand/images/ship.webp" alt="">
-                    </div>
-                    <div id="change" class="tabs-contents-items">
-						Chúng mình chỉ chấp nhận đổi trả trong trường hợp sản phẩm có lỗi mà không báo trước đến các bạn. 	
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="related-products">
-            <div class="container">
-                <div class="heading-related">
-                    <a href="">Sản phẩm liên quan</a>
-                </div>
-            </div>
-            <ul class="products">
-               <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <li class="products-items">
-                            <div class="products-top">
-                                <a href="" class="product-thumb">
-                                    <img src="images/aodemo.jpg" alt="">
-                                </a>
-                                <a class="add">
-                                    <button>
-                                        <i class="fa-solid fa-plus"></i>
-                                        Giỏ hàng
-                                    </button>                                      
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="" class="product-name">Stratford Tee</a>
-                                <div class="product-price">250.000₫</div>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <li class="products-items">
-                            <div class="products-top">
-                                <a href="" class="product-thumb">
-                                    <img src="images/aodemo.jpg" alt="">
-                                </a>
-                                <a class="add">
-                                    <button>
-                                        <i class="fa-solid fa-plus"></i>
-                                        Giỏ hàng
-                                    </button>                                      
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="" class="product-name">Stratford Tee</a>
-                                <div class="product-price">250.000₫</div>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <li class="products-items">
-                            <div class="products-top">
-                                <a href="" class="product-thumb">
-                                    <img src="images/aodemo.jpg" alt="">
-                                </a>
-                                <a class="add">
-                                    <button>
-                                        <i class="fa-solid fa-plus"></i>
-                                        Giỏ hàng
-                                    </button>                                      
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="" class="product-name">Stratford Tee</a>
-                                <div class="product-price">250.000₫</div>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <li class="products-items">
-                            <div class="products-top">
-                                <a href="" class="product-thumb">
-                                    <img src="images/aodemo.jpg" alt="">
-                                </a>
-                                <a class="add">
-                                    <button>
-                                        <i class="fa-solid fa-plus"></i>
-                                        Giỏ hàng
-                                    </button>                                      
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="" class="product-name">Stratford Tee</a>
-                                <div class="product-price">250.000₫</div>
-                            </div>
-                        </li>
-                    </div>
-               </div>
-            </ul>
         </div>
         <footer>
             <div id="footer-1">
@@ -421,30 +317,15 @@
                 </li>
             </ul>
         </div>
-    </div>
-  
-<!-- jquery -->
+    </div>    
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstr ap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+    <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
-    // chuyen anh
-    $(()=>{
-        $('#sub-img-list img').click(function(){
-            let imgPatch= $(this).attr('src');
-            $('#main-img').attr('src',imgPatch);
-        })
-    })
-    // chuyen tab
+    // nut backtop
     $(document).ready(function(){
-        $('.tabs-contents-items').hide();
-        $('.tabs-contents-items:first-child').fadeIn();
-        $('.nav-tabs li button').click(function(){
-            let id_tabs_contents=$(this).children('a').attr('href');
-            $('.tabs-contents-items').hide();
-            $(id_tabs_contents).fadeIn();
-        });
-    });
-        // nut backtop
-        $(document).ready(function(){
         $(window).scroll(function(){
             if($(this).scrollTop()){
                 $('#backtop').fadeIn();
@@ -458,7 +339,6 @@
             },100);
         });
     });
-    // nav-mobile
     $(document).ready(function(){
         $('#icon-down-nav-mobile').click(function(){
             $('#sub-nav-mobile').slideToggle();
@@ -485,7 +365,4 @@
         });
     });
 </script>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
 </html>
