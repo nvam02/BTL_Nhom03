@@ -1,12 +1,9 @@
-*{
-    font-family: 'Roboto', sans-serif;
-} 
 @media (max-width:1023px)
 {
     .hottline{
         display: none;
     }
-    .hidden-cart{
+    #hidden-cart{
         display: none;
     }
 }
@@ -44,9 +41,16 @@
         margin: 0;
     }
 }
+.cart-icon a{
+    text-decoration: none;
+}
+.cart-icon a strong{
+    text-transform: uppercase;
+}
 .cart-icon :hover{
     color: red;
 }
+
 #nav-mobile-icon-wrapper{
     line-height: 60px;
     display: none;
@@ -75,12 +79,14 @@
 .navb > li >a{
     color: #fff;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .navb > li{
     display: inline-block;
 }
 .navb li{
     position: relative;
+    z-index: 2;
 }
 .navb li a{
     text-decoration: none;
@@ -126,7 +132,7 @@
     display: none;
     position: absolute;
     background-color: #000;
-    right:-265px;
+    right:-260px;
     top:47px;
     padding:0;
 }
@@ -134,7 +140,7 @@
     display: none;
     position: absolute;
     background-color: #000;
-    right: -244px;
+    right: -235px;
     top: 96px;
     padding:0;
 }
@@ -142,7 +148,7 @@
     display: none;
     position: absolute;
     background-color: #000;
-    right: -221px;
+    right: -209px;
     top: 144px;
     padding:0;
 }
@@ -150,7 +156,7 @@
     display: none;
     position: absolute;
     background-color: #000;
-    right: -141px;
+    right: -139px;
     top: 192px;
     padding:0;
 }
@@ -193,10 +199,10 @@ h1{
     text-align: center;
     text-transform: uppercase;
 }
-.list{
+#list{
     position: relative;
 }
-.list button{
+#list button{
     text-transform: uppercase;
 }
 #bot-list{
@@ -213,7 +219,6 @@ h1{
     background-color:#fff;
     border: 1px solid #ccc;
     width: 100px;
-    /* display: none; */
 }
 #option-brand ul,#option-size ul{
     list-style-type: none;

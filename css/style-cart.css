@@ -87,6 +87,7 @@
 }
 .navb li{
     position: relative;
+    z-index: 2;
 }
 .navb li a{
     text-decoration: none;
@@ -183,6 +184,22 @@
     top:15px
 }
 /* style-cart */
+#products-content-head{
+    margin-top: 10px;
+}
+#products-content-head .products-link-head a{
+    text-decoration: none;
+    color:#000;
+    font-size: 16px;
+}
+#products-content-head .products-link-head i{
+    font-size: 14px;
+    margin:0 10px;
+}
+.products-link-head a:hover{
+    font-size: 17px;
+    font-weight: bold;
+}
 #cart{
     padding:15px 0;
 }

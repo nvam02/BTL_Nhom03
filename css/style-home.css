@@ -78,6 +78,7 @@
 }
 .navb > li{
     display: inline-block;
+    font-weight: bold;
 }
 .navb li{
     position: relative;
