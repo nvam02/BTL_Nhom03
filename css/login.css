@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    overflow: hidden;
+    background-color: #ededed;
+}
+.dn {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: minmax(100px,auto);
+    background: url('https://cdn2.vectorstock.com/i/1000x1000/59/51/second-hand-stamp-vector-16655951.jpg');
+}
+ /* .logo{
+     width: 30px;
+ } */
+.form {
+    border: 1px solid #80808000;
+    grid-column: 6/9;
+    grid-row: 3;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px 0px rgb(33, 48, 255);
+    background-color: white;
+}
+h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+/*cach ra*/
+i.cach {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+ html {
+    background: url('https://cdn2.vectorstock.com/i/1000x1000/59/51/second-hand-stamp-vector-16655951.jpg');
+ }
+label {
+    margin-left: -126px;
+    display: block;
+    font-weight: lighter;
+ 
+}
+input{
+    display: block;
+    border-bottom: 2px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline-style: none;
+}
+input#check1{
+	margin-right:68%;
+}
+#check1>label{
+	margin-top:220%;
+}
+input[type="text"] {
+    padding: 5px;
+    width: 60%;
+}
+
+input[type="password"] {
+    padding: 5px;
+    width: 60%;
+}
+
+input#submit {
+    padding: 8px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    bottom: 90px;
+    cursor: pointer;
+	color:#FFF;
+    background: #292cff;
+    /* background: linear-gradient(to right, #fc00ff, #00dbde); */
+}
+input#submit:hover{
+    background: #000000;
+    /* background: linear-gradient(to right, #fc466b, #3f5efb);  */
+}
+/* .form>a{
+	
+} */
