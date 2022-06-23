@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="/css/administrator.css">
+  </head>
+  <body>
+    <div class="container-fluid" style="padding: 0;">
+      
+        <div class="navigation">
+          <ul>
+            <li>
+                <a href="#">
+                <span class="icon"><i id ="leaf" class="fa-brands fa-canadian-maple-leaf"></i></span>
+                <span class="title"><img src="/images/logoBrand.jpg" width="100%" height="80px"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                <span class="title">Thống Kê</span>
+                </a> 
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <span class="title">Khách Hàng</span>
+                </a>      
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fa-solid fa-message"></i></span>
+                <span class="title">Tin Nhắn</span> 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                <span class="title">Trợ Giúp</span>
+                </a>     
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                <span class="title">Cài Đặt</span>
+                </a>        
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fa-solid fa-key"></i></span>
+                <span class="title">Mật Khẩu</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                <span class="title">Đăng Xuất</span>
+                </a>        
+            </li>
+          </ul>  
+        </div>
+
+        <div class="main">
+
+          <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <div class="search">
+              <form action="">
+                <input type="text" placeholder="Tìm kiếm" name="q">
+                <button id="find" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+            <div class="user">
+              <img src="/images/user.jpg">
+            </div>
+          </div>
+
+          <div class="cardBox">
+            <div class="card">
+              <div>
+                <div class="numbers">250</div>
+                <div class="cardName">Đơn hàng mới</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa-solid fa-box"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">1000</div>
+                <div class="cardName">Khách hàng</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="numbers">$ 5000</div>
+                <div class="cardName">Doanh thu</div>
+              </div>
+              <div class="iconBox">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <div class="recentOrders">
+              <div class="cardHeader">
+                <h2>Trạng thái đơn hàng</h2>
+                <a href="#" class="btn">Hiển thị tất cả</a>
+              </div>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Tên mặt hàng</td>
+                    <td>Giá</td>
+                    <td>Cần trả</td>
+                    <td>Trạng thái</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nubia Redmagic 6</td>
+                    <td>$1200</td>
+                    <td>Đã thanh toán</td>
+                    <td><span class="status delivered">Đã giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Hot Toys-Iron Man Mk 50-</td>
+                    <td>$100</td>
+                    <td>Chờ thanh toán</td>
+                    <td><span class="status pending">Đang giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Áo thun Essentials</td>
+                    <td>$30</td>
+                    <td>Chờ thanh toán</td>
+                    <td><span class="status return">Hoàn hàng</span></td>
+                  </tr>
+                  <tr>
+                    <td>HP Pavilion 14</td>
+                    <td>$1700</td>
+                    <td>Chờ thanh toán</td>
+                    <td><span class="status inprogress">Đang giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Áo thun Arknights</td>
+                    <td>$20</td>
+                    <td>Đã thanh toán</td>
+                    <td><span class="status delivered">Đã giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Quần Jean đen</td>
+                    <td>$40</td>
+                    <td>Chờ thanh toán</td>
+                    <td><span class="status inprogress">Đang giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sạc dự phòng Honkai Impact 10000mAh</td>
+                    <td>$200</td>
+                    <td>Đã thanh toán</td>
+                    <td><span class="status delivered">Đã giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Loa JBL Go 2</td>
+                    <td>$120</td>
+                    <td>Đã thanh toán</td>
+                    <td><span class="status delivered">Đã giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Xiaomi MiPad 5</td>
+                    <td>$1500</td>
+                    <td>Đã thanh toán</td>
+                    <td><span class="status pending">Đang giao</span></td>
+                  </tr>
+                  <tr>
+                    <td>Áo phông Hololive</td>
+                    <td>$50</td>
+                    <td>Đã thanh toán</td>
+                    <td><span class="status delivered">Đã giao</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="recentCustomers">
+              <div class="cardHeader">
+                <h2>Khách hàng mới</h2>
+              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm1.jpg"></div></td>
+                    <td><h4>Nguyễn Văn A<br><span>Hà Nam</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm2.jpg"></div></td>
+                    <td><h4>Nguyễn Văn B<br><span>Hà Nội</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm3.jpg"></div></td>
+                    <td><h4>Nguyễn Văn C<br><span>Nam Định</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm4.jpg"></div></td>
+                    <td><h4>Nguyễn Văn D<br><span>Đồng Nai</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm5.jpg"></div></td>
+                    <td><h4>Nguyễn Văn E<br><span>Ninh Thuận</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm6.jpg"></div></td>
+                    <td><h4>Nguyễn Văn G<br><span>Lào Cai</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm7.jpg"></div></td>
+                    <td><h4>Nguyễn Văn H<br><span>Hải Phòng</span></h4></td>
+                  </tr>
+                  <tr>
+                    <td width="60px"><div class="imgBx"><img src="/images/cm8.jpg"></div></td>
+                    <td><h4>Nguyễn Văn K<br><span>Nha Trang</span></h4></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleMenu()
+        {
+          let toggle = document.querySelector('.toggle');
+          let navigation = document.querySelector('.navigation');
+          let main = document.querySelector('.main');
+          toggle.classList.toggle('active');
+          navigation.classList.toggle('active');
+          main.classList.toggle('mainactive');
+        }
+      </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
