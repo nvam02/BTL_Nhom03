@@ -76,3 +76,8 @@ function step(btn,index){
         }
     cartTT()
 }
+var cartIteam = document.querySelectorAll("tbody div.products")
+let numPD = localStorage.getItem("num") ? JSON.parse(localStorage.getItem("num")) :[]
+localStorage.setItem("number", JSON.stringify(cartIteam.length))
+var x=document.getElementById("num")
+x.innerHTML=cartIteam.length

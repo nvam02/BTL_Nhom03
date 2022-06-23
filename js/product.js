@@ -17,7 +17,14 @@ const add = document.querySelectorAll("button")
                 money: productmoney,
                 SL: 1
             })
-            
+                        
         localStorage.setItem("list",JSON.stringify(listPD))
+        a=listPD.length
+        var x=document.getElementById("num")
+        x.innerHTML=a
     }})
 })
+let listPD = localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) :[]
+a=listPD.length
+var x=document.getElementById("num")
+x.innerHTML=a
