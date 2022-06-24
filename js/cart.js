@@ -23,7 +23,7 @@ function xoa(index){
 
 
 // ------------------------------tính tổng tiền-------------------------------
-
+var f
 function cartTT (){
     var cartIteam = document.querySelectorAll("tbody div.products")
     var totalC = 0
@@ -36,6 +36,7 @@ function cartTT (){
 
         totalC = totalC + eval(totalA)
         totalD = totalC.toFixed(3).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        f=totalD
     }
     // console.log(totalD)
     var tongtien = document.getElementById("text1")
@@ -81,3 +82,12 @@ let numPD = localStorage.getItem("num") ? JSON.parse(localStorage.getItem("num")
 localStorage.setItem("number", JSON.stringify(cartIteam.length))
 var x=document.getElementById("num")
 x.innerHTML=cartIteam.length
+console.log(f)
+const ad = document.querySelectorAll("button.tt")
+ad.forEach(function(button,Home){
+    button.addEventListener("click",function(event){{
+        alert("Bạn đã thanh toán thành công \nSố tiền bạn cần phải thanh toán là:"+"\n"+f)
+        localStorage.clear()
+        location.reload()
+    }})
+})
